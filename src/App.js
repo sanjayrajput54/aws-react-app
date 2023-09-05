@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src="./logo.jpg" className="App-logo" alt="logo" />
       </header>
-        <h1>AWS React APP</h1>
+        <h1>AWS React APP...</h1>
       </div>
     </div>
   );
