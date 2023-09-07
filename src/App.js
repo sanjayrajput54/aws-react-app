@@ -1,16 +1,19 @@
 import './App.css';
 
+import { useRoutes } from "react-router-dom";
+import Home from './home';
+import User from './user';
+
 function App() {
-  return (
-    <div className="App">
-      <div className="Container">
-      <header className="App-header">
-        <img src="./logo.jpg" className="App-logo" alt="logo" />
-      </header>
-        <h1>AWS React APP...</h1>
-      </div>
-    </div>
-  );
+  let element = useRoutes([
+    {
+      path: "/",
+      element: <Home />
+    },
+    { path: "user", element: <User /> },
+  ]);
+
+  return element;
 }
 
 export default App;
