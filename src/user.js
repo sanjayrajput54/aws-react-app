@@ -72,7 +72,7 @@ function User() {
                 <h1>Users:</h1>
                 <div className="section-user-list">
                         {userState?.map((item, index) =>renderUser(item,index))}
-                        {userState.length == 0 && <div>No data</div>}
+                        {userState.length === 0 && <div>No data</div>}
                 </div>
                 <div className="section-user-form">
 
