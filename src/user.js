@@ -41,6 +41,7 @@ function User() {
             };
             const response = await fetch(API,requestOptions);
             const data = await response.json();
+            console.log("data",data)
             setUserState((preState)=>[...preState, {...formState}]);
             setFormState(null)
         } catch (err) {
